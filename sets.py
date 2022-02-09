@@ -16,7 +16,7 @@ combined_list = (friends.union(my_friends))
 common_names = (friends.intersection(my_friends))
 only_friends = (friends.difference(my_friends))
 just_one_list_names = (friends.symmetric_difference(my_friends))
-cars_without_duplications = {'900','420','V70','911','996','V90','911','911','S','328','900'}
+cars_without_duplications = set(cars)
 
 print(friends.__contains__('Eric' and 'John'))
 print(combined_list)
