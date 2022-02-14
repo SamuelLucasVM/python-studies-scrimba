@@ -12,14 +12,17 @@ second_number = float(input('Choose another number\n'))
 if operation == '+':
     print(f'The result is {first_number + second_number}')
 
-if operation == '-':
+elif operation == '-':
     print(f'The result is {first_number - second_number}')
 
-if operation == '*':
+elif operation == '*':
     print(f'The result is {first_number * second_number}')
 
-if operation == '/':
+elif operation == '/':
     print(f'The result is {first_number / second_number}')
+
+else:
+    print('Input Error!')
 
 #Bonus:
 celcius = float(input('Choose a temperature in Celcius\n'))
