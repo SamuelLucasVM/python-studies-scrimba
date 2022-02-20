@@ -25,10 +25,10 @@ while guesses > 0:
         number = int(input('Enter another number: '))
     if number > 10:
         print(f'This is more than 10, try again!')
-        break
+        continue
     if number < 0:
         print(f'This is below 0, try again!')
-        break
+        continue
     if number is correct_number:
         print(f'Congratulations, {number} is a correct number!')
         break
@@ -57,10 +57,10 @@ while guesses > 0:
         break
     elif number > 100:
         print(f'This is more than 100, try again!')
-        break
+        continue
     elif number < 0:
         print(f'This is below 0, try again!')
-        break
+        continue
     else:
         guesses = guesses - 1
         if guesses == 1 and number > correct_number:
